@@ -102,6 +102,7 @@ export async function fetchFilteredInvoices(
   const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
   try {
+    console.log('Fetching filtered invoices...');
     const invoices = await sql<InvoicesTable[]>`
       SELECT
         invoices.id,
@@ -122,7 +123,7 @@ export async function fetchFilteredInvoices(
       ORDER BY invoices.date DESC
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `;
-
+    console.log('Filtered invoices fetched.');
     return invoices;
   } catch (error) {
     console.error('Database Error:', error);
@@ -132,6 +133,8 @@ export async function fetchFilteredInvoices(
 
 export async function fetchInvoicesPages(query: string) {
   try {
+
+    console.log('Fetching total number of invoice pages...');
     const data = await sql`SELECT COUNT(*)
     FROM invoices
     JOIN customers ON invoices.customer_id = customers.id
@@ -144,6 +147,9 @@ export async function fetchInvoicesPages(query: string) {
   `;
 
     const totalPages = Math.ceil(Number(data[0].count) / ITEMS_PER_PAGE);
+    
+    console.log(`Total pages: ${totalPages}`);
+
     return totalPages;
   } catch (error) {
     console.error('Database Error:', error);
@@ -178,6 +184,8 @@ export async function fetchInvoiceById(id: string) {
 
 export async function fetchCustomers() {
   try {
+
+    console.log('Fetching all customers...');
     const customers = await sql<CustomerField[]>`
       SELECT
         id,
@@ -186,6 +194,7 @@ export async function fetchCustomers() {
       ORDER BY name ASC
     `;
 
+    console.log("All Customers Data fetched.");
     return customers;
   } catch (err) {
     console.error('Database Error:', err);
