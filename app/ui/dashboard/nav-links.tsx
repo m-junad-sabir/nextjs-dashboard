@@ -22,12 +22,16 @@ const links = [
 ];
 
 export default function NavLinks() {
+
   const pathname = usePathname();
+
   return (
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
+
         return (
+
           <Link
             key={link.name}
             href={link.href}
@@ -39,7 +43,9 @@ export default function NavLinks() {
           >
             <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
+          
           </Link>
+
         );
       })}
     </>
