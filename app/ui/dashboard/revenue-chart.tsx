@@ -33,7 +33,7 @@ export default async function RevenueChart(
   return (
     <div className="w-full md:col-span-4">
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Recent Revenue
+        Overall Zones Status - Pie Chart
       </h2>
       {/* NOTE: Uncomment this code in Chapter 7 */}
 
