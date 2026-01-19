@@ -1,4 +1,4 @@
-import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
+import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import { deleteInvoice } from '@/app/lib/actions';
 

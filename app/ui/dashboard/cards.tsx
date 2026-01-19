@@ -3,7 +3,7 @@ import {
   ClockIcon,
   UserGroupIcon,
   InboxIcon,
-} from '@heroicons/react/24/outline';
+} from '@heroicons/react/24/solid';
 import { lusitana } from '@/app/ui/fonts';
 import { fetchCardData } from "@/app/lib/data";
 
