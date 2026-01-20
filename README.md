@@ -23,16 +23,20 @@ This project is set up to explore:
 1.  **Install dependencies:**
 
     ```bash
-    npm install
+    pnpm install
     ```
 
 2.  **Run the development server:**
 
     ```bash
-    npm run dev
+    pnpm run dev
     ```
 
-3.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.  Open [this link](https://nextjs.org/learn/dashboard-app/adding-authentication) to get app login credientials.
+
+4.  Login Info:
+
+    ![Initial Map View](./Screenshots/mapview-screenshot.png)
 
 ## 📚 Learn More
 
