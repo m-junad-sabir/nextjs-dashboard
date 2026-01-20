@@ -32,11 +32,11 @@ This project is set up to explore:
     pnpm run dev
     ```
 
-3.  Open [this link](https://nextjs.org/learn/dashboard-app/adding-authentication) to get app login credientials.
+3.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 4.  Login Info:
 
-    ![Initial Map View](./Screenshots/mapview-screenshot.png)
+    Open [this link](https://nextjs.org/learn/dashboard-app/adding-authentication) to get app login credientials.
 
 ## 📚 Learn More
 
