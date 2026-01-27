@@ -34,6 +34,16 @@ This project is set up to explore:
 
 3.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+4.  Login Info:
+
+    Open [this link](https://nextjs.org/learn/dashboard-app/adding-authentication) to get app login credentials.
+    You should be able to log in and out of your application using the following credentials:
+    
+    ```
+    Email: user@nextmail.com
+    Password: 123456
+    ```
+
 ## 📚 Learn More
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
