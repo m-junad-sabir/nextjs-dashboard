@@ -36,7 +36,13 @@ This project is set up to explore:
 
 4.  Login Info:
 
-    Open [this link](https://nextjs.org/learn/dashboard-app/adding-authentication) to get app login credientials.
+    Open [this link](https://nextjs.org/learn/dashboard-app/adding-authentication) to get app login credentials.
+    You should be able to log in and out of your application using the following credentials:
+    
+    ```
+    Email: user@nextmail.com
+    Password: 123456
+    ```
 
 ## 📚 Learn More
 
